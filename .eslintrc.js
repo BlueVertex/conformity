@@ -7,15 +7,6 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   parser: 'babel-eslint',
-  settings: {
-  },
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   rules: {
     'simple-import-sort/imports': 'error',
     'prettier/prettier': [
@@ -37,30 +28,6 @@ module.exports = {
       }
     }]
   },
-  overrides: [
-    {
-      files: ['*.js'],
-      rules: {
-        'simple-import-sort/imports': [
-          'error',
-          {
-            groups: [
-              // Packages. `react` related packages come first.
-              // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-              ['^@?\\w'],
-              // Absolute imports and Relative imports.
-              [
-                '^(utils|services|hooks|hoc|types|contexts|dictionary|components)(/.*|$)',
-                '^\\.'
-              ],
-              // for scss imports.
-              ['^[^.]']
-            ]
-          }
-        ]
-      }
-    }
-  ],
   env: {
     browser: true,
     es6: true,
