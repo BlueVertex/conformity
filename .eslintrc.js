@@ -25,13 +25,7 @@ module.exports = {
         arrowParens: 'avoid'
       }
     ],
-    "vue/max-attributes-per-line": ["error", {
-      "singleline": 1,
-      "multiline": {
-        "max": 1,
-        "allowFirstLine": true
-      }
-    }]
+    'vue/max-attributes-per-line': 'off'
   },
   env: {
     browser: true,
