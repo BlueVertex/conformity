@@ -1,12 +1,17 @@
 module.exports = {
   plugins: ['simple-import-sort'],
   extends: [
-    'plugin:vue/recommended',
+    'plugin:vue/vue3-recommended',
     'eslint:recommended',
     'prettier/vue',
     'plugin:prettier/recommended',
   ],
-  parser: 'babel-eslint',
+  parser: "vue-eslint-parser",
+  parserOptions: {
+    parser: "babel-eslint",
+    ecmaVersion: 2020,
+    sourceType: "module"
+  },
   rules: {
     'simple-import-sort/imports': 'error',
     'prettier/prettier': [
