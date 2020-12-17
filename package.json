@@ -1,6 +1,6 @@
 {
-  "name": "@bluevertex/conformity-js",
-  "version": "1.0.0",
+  "name": "@bluevertex/eslint-config-conformity",
+  "version": "0.0.1",
   "description": "ESLint and Prettier Config from BlueVertex",
   "main": "index.js",
   "scripts": {
